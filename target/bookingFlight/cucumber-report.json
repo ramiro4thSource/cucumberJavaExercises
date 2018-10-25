@@ -1,0 +1,399 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "# new feature"
+      },
+      {
+        "line": 2,
+        "value": "# Tags: optional"
+      }
+    ],
+    "line": 5,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3981215735,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StartingStep.beforeScenario()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Book a trip successfully",
+        "description": "",
+        "id": "as-registered-user-i-want-to-book-a-round-trip-flight;book-a-trip-successfully",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3737071635,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I am a user on the landing page",
+            "match": {
+              "location": "StartingStep.setup()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 219692347,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I provide my credentials as follows",
+            "match": {
+              "location": "SignInStep.iProvideMyCredentialsAsFollows(UserInfo\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "userName",
+                  "password"
+                ],
+                "line": 11
+              },
+              {
+                "cells": [
+                  "mercury",
+                  "mercury"
+                ],
+                "line": 12
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 14582724170,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "decide to sign in",
+            "match": {
+              "location": "SignInStep.decideToSignIn()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 737862289,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "provide flight details",
+            "match": {
+              "location": "BookDetailSetp.provideFlightDetails(FlightInfo\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "type",
+                  "passengers",
+                  "departingFrom",
+                  "onMonth",
+                  "onDay",
+                  "arrivingIn",
+                  "returningOnMonth",
+                  "returningOnDay"
+                ],
+                "line": 15
+              },
+              {
+                "cells": [
+                  "roundtrip",
+                  "4",
+                  "Zurich",
+                  "October",
+                  "25",
+                  "Acapulco",
+                  "November",
+                  "20"
+                ],
+                "line": 16
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 242148963,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "provide preferences",
+            "match": {
+              "location": "BookDetailSetp.providePreferences(FlightInfo\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "serviceClass",
+                  "airline"
+                ],
+                "line": 18
+              },
+              {
+                "cells": [
+                  "Business",
+                  "Pangea Airlines"
+                ],
+                "line": 19
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 355949918,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "press continue",
+            "match": {
+              "location": "FlightSelectionStep.pressContinue()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 59131036,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "select a flight randomly",
+            "match": {
+              "location": "FlightSelectionStep.selectAFlightRandomly()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 443947003,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "press continue",
+            "match": {
+              "location": "FlightSelectionStep.pressContinue()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1337349156,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "provide passengers info",
+            "match": {
+              "location": "PurchaseDetailsStep.providePassengersInfo(Passenger\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "firstName",
+                  "lastName",
+                  "Meal"
+                ],
+                "line": 24
+              },
+              {
+                "cells": [
+                  "Jaimico",
+                  "Estrella",
+                  "Diabetic"
+                ],
+                "line": 25
+              },
+              {
+                "cells": [
+                  "Rodrigo",
+                  "Jaleas",
+                  "Hindu"
+                ],
+                "line": 26
+              },
+              {
+                "cells": [
+                  "Carlitos",
+                  "Morales",
+                  "No preference"
+                ],
+                "line": 27
+              },
+              {
+                "cells": [
+                  "Rodrigo",
+                  "Jaleas",
+                  "Bland"
+                ],
+                "line": 28
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 999188201,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "provide credit card info",
+            "match": {
+              "location": "PurchaseDetailsStep.provideCreditCardInfo(AdditionalInfo\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "typeCC",
+                  "numberCC",
+                  "expirationMonthCC",
+                  "expirationYearCC",
+                  "firstNameHolderCC",
+                  "middleNameHolderCC",
+                  "lastNameHolderCC"
+                ],
+                "line": 30
+              },
+              {
+                "cells": [
+                  "MasterCard",
+                  "787888007000912",
+                  "10",
+                  "2000",
+                  "Ernesto",
+                  "Raymundo",
+                  "Gonzalez"
+                ],
+                "line": 31
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1070349337,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "provide billing address",
+            "match": {
+              "location": "PurchaseDetailsStep.provideBillingAddress(AdditionalInfo\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "checkPropAddres",
+                  "address",
+                  "cityAddress",
+                  "provinceAddress",
+                  "zipCodeAddress",
+                  "countryAddress"
+                ],
+                "line": 33
+              },
+              {
+                "cells": [
+                  "yes",
+                  "Calle siempre viva",
+                  "Bora bora",
+                  "Timbactu",
+                  "87900",
+                  "Yemen"
+                ],
+                "line": 34
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 971630847,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "provide delivery address",
+            "match": {
+              "location": "PurchaseDetailsStep.provideDeliveryAddress(AdditionalInfo\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "checkPropAddres",
+                  "address",
+                  "cityAddress",
+                  "provinceAddress",
+                  "zipCodeAddress",
+                  "countryAddress"
+                ],
+                "line": 36
+              },
+              {
+                "cells": [
+                  "no",
+                  "Calle siempre viva",
+                  "Bora bora",
+                  "Timbactu",
+                  "87900",
+                  "Yemen"
+                ],
+                "line": 37
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 475852200,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "press continue",
+            "match": {
+              "location": "FlightSelectionStep.pressContinue()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 51550346,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "I should get a result",
+            "match": {
+              "location": "FlightBookedStep.iShouldGetAResult()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 7,
+            "name": "@Booking-Succesfully"
+          }
+        ]
+      }
+    ],
+    "name": "As registered user I want to book a round trip flight",
+    "description": "",
+    "id": "as-registered-user-i-want-to-book-a-round-trip-flight",
+    "keyword": "Feature",
+    "uri": "bookTripFlight.feature",
+    "tags": [
+      {
+        "line": 4,
+        "name": "@Booking"
+      }
+    ]
+  }
+]
