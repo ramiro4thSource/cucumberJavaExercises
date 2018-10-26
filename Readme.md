@@ -17,6 +17,7 @@ mvn test
 ## Structure
 
 ```
+├── docs
 ├── drivers
 │   ├── chromedriver.exe
 │   ├── geckodriver.exe
