@@ -33,14 +33,25 @@ WebDriver driver;
 		registerLink.click();
 	}
 
+	/**
+	 * Represents the action of providing user name in landing page
+	 * @param userName String user name from current user
+	 * */
 	public void provideUserName(String userName){
 		fNameTxt.sendKeys(userName);
 	}
 
+	/**
+	 * Represents the action of providing password in landing page
+	 * @param password String password from current user
+	 * */
 	public void providePassword(String password){
 		passwordTxt.sendKeys(password);
 	}
 
+	/**
+	 * Represents de action of clicking sign-in button
+	 * */
 	public void decideToSignIn(){
 		logInBttn.click();
 	}

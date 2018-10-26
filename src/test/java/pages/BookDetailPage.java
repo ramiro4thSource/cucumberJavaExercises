@@ -85,6 +85,12 @@ public class BookDetailPage extends DriverFactory {
         }
     }
 
+    /**
+     * This method applies an explicit wait taking a time out and locator as parameters
+     * @param timeOut time out in seconds
+     * @param locator Locator to be applied to find web element
+     * @return If web control is located return WebElement object, otherwise null object is returned.
+     * */
     private WebElement  waitUntilElementVisible(int timeOut, By locator){
         WebDriverWait wait = new WebDriverWait(this.driver,timeOut);
         return  wait.until(ExpectedConditions.visibilityOfElementLocated(locator));

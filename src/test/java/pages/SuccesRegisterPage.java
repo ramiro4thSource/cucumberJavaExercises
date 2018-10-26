@@ -5,6 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+/**
+ * Class which represents succesful user registration
+ * */
 public class SuccesRegisterPage {
 
 	WebDriver driver;
@@ -22,7 +25,10 @@ public class SuccesRegisterPage {
 	}
 
 	
-	
+	/**
+	 * Get the url of current page.
+	 * @return Url string.
+	 * */
 	public String isSuccesPage() throws Throwable {
 		return driver.getCurrentUrl();
 	}
