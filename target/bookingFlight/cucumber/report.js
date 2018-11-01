@@ -1,387 +1,131 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("bookTripFlight.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("SignUpNewUser.feature");
 formatter.feature({
-  "comments": [
-    {
-      "line": 1,
-      "value": "# new feature"
-    },
-    {
-      "line": 2,
-      "value": "# Tags: optional"
-    }
-  ],
-  "line": 5,
-  "name": "As registered user I want to book a round trip flight",
-  "description": "",
-  "id": "as-registered-user-i-want-to-book-a-round-trip-flight",
+  "line": 2,
+  "name": "",
+  "description": "As new user I want to have my account on the website",
+  "id": "",
   "keyword": "Feature",
   "tags": [
     {
-      "line": 4,
-      "name": "@Booking"
+      "line": 1,
+      "name": "@Signup"
     }
   ]
 });
 formatter.before({
-  "duration": 3981215735,
+  "duration": 3373661380,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 8,
-  "name": "Book a trip successfully",
+  "line": 6,
+  "name": "I want to create a new account",
   "description": "",
-  "id": "as-registered-user-i-want-to-book-a-round-trip-flight;book-a-trip-successfully",
+  "id": ";i-want-to-create-a-new-account",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 7,
-      "name": "@Booking-Succesfully"
+      "line": 5,
+      "name": "@Signup-simple"
     }
   ]
 });
 formatter.step({
-  "line": 9,
+  "line": 7,
   "name": "I am a user on the landing page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 10,
-  "name": "I provide my credentials as follows",
-  "rows": [
-    {
-      "cells": [
-        "userName",
-        "password"
-      ],
-      "line": 11
-    },
-    {
-      "cells": [
-        "mercury",
-        "mercury"
-      ],
-      "line": 12
-    }
-  ],
+  "line": 8,
+  "name": "I decide to create an account",
   "keyword": "When "
 });
 formatter.step({
-  "line": 13,
-  "name": "decide to sign in",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 14,
-  "name": "provide flight details",
-  "rows": [
-    {
-      "cells": [
-        "type",
-        "passengers",
-        "departingFrom",
-        "onMonth",
-        "onDay",
-        "arrivingIn",
-        "returningOnMonth",
-        "returningOnDay"
-      ],
-      "line": 15
-    },
-    {
-      "cells": [
-        "roundtrip",
-        "4",
-        "Zurich",
-        "October",
-        "25",
-        "Acapulco",
-        "November",
-        "20"
-      ],
-      "line": 16
-    }
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 17,
-  "name": "provide preferences",
-  "rows": [
-    {
-      "cells": [
-        "serviceClass",
-        "airline"
-      ],
-      "line": 18
-    },
-    {
-      "cells": [
-        "Business",
-        "Pangea Airlines"
-      ],
-      "line": 19
-    }
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 20,
-  "name": "press continue",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 21,
-  "name": "select a flight randomly",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 22,
-  "name": "press continue",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 23,
-  "name": "provide passengers info",
+  "line": 9,
+  "name": "I provide my info correctly as follows",
   "rows": [
     {
       "cells": [
         "firstName",
         "lastName",
-        "Meal"
+        "country",
+        "email",
+        "password",
+        "adress",
+        "phone",
+        "city",
+        "province",
+        "zipCode",
+        "userName"
       ],
-      "line": 24
+      "line": 10
     },
     {
       "cells": [
-        "Jaimico",
-        "Estrella",
-        "Diabetic"
+        "Fernando",
+        "Montreal",
+        "YEMEN",
+        "fer@fake.com",
+        "holaMundo",
+        "calle siempre viva",
+        "9995-09-09",
+        "Bororo",
+        "shing",
+        "98000",
+        "pedrito"
       ],
-      "line": 25
-    },
-    {
-      "cells": [
-        "Rodrigo",
-        "Jaleas",
-        "Hindu"
-      ],
-      "line": 26
-    },
-    {
-      "cells": [
-        "Carlitos",
-        "Morales",
-        "No preference"
-      ],
-      "line": 27
-    },
-    {
-      "cells": [
-        "Rodrigo",
-        "Jaleas",
-        "Bland"
-      ],
-      "line": 28
+      "line": 11
     }
   ],
   "keyword": "And "
 });
 formatter.step({
-  "line": 29,
-  "name": "provide credit card info",
-  "rows": [
-    {
-      "cells": [
-        "typeCC",
-        "numberCC",
-        "expirationMonthCC",
-        "expirationYearCC",
-        "firstNameHolderCC",
-        "middleNameHolderCC",
-        "lastNameHolderCC"
-      ],
-      "line": 30
-    },
-    {
-      "cells": [
-        "MasterCard",
-        "787888007000912",
-        "10",
-        "2000",
-        "Ernesto",
-        "Raymundo",
-        "Gonzalez"
-      ],
-      "line": 31
-    }
-  ],
+  "line": 12,
+  "name": "I submit the form",
   "keyword": "And "
 });
 formatter.step({
-  "line": 32,
-  "name": "provide billing address",
-  "rows": [
-    {
-      "cells": [
-        "checkPropAddres",
-        "address",
-        "cityAddress",
-        "provinceAddress",
-        "zipCodeAddress",
-        "countryAddress"
-      ],
-      "line": 33
-    },
-    {
-      "cells": [
-        "yes",
-        "Calle siempre viva",
-        "Bora bora",
-        "Timbactu",
-        "87900",
-        "Yemen"
-      ],
-      "line": 34
-    }
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 35,
-  "name": "provide delivery address",
-  "rows": [
-    {
-      "cells": [
-        "checkPropAddres",
-        "address",
-        "cityAddress",
-        "provinceAddress",
-        "zipCodeAddress",
-        "countryAddress"
-      ],
-      "line": 36
-    },
-    {
-      "cells": [
-        "no",
-        "Calle siempre viva",
-        "Bora bora",
-        "Timbactu",
-        "87900",
-        "Yemen"
-      ],
-      "line": 37
-    }
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 38,
-  "name": "press continue",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 39,
-  "name": "I should get a result",
+  "line": 13,
+  "name": "I should get at http://newtours.demoaut.com/create_account_success.php",
   "keyword": "Then "
 });
 formatter.match({
   "location": "StartingStep.setup()"
 });
 formatter.result({
-  "duration": 3737071635,
+  "duration": 2782184820,
   "status": "passed"
 });
 formatter.match({
-  "location": "SignInStep.iProvideMyCredentialsAsFollows(UserInfo\u003e)"
+  "location": "LandingPageStep.she_chooses_to_sign_up()"
 });
 formatter.result({
-  "duration": 219692347,
-  "status": "passed"
+  "duration": 180345547,
+  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"link text\",\"selector\":\"REGISTER\"}\n  (Session info: chrome\u003d70.0.3538.77)\n  (Driver info: chromedriver\u003d2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform\u003dWindows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.14.0\u0027, revision: \u0027aacccce0\u0027, time: \u00272018-08-02T20:19:58.91Z\u0027\nSystem info: host: \u0027MIDL002095\u0027, ip: \u0027127.0.0.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_191\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\\Users\\RAMIRO~1\\AppData\\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:49436}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true}\nSession ID: 572f534efaa340e4c61b91707d2c5a79\n*** Element info: {Using\u003dlink text, value\u003dREGISTER}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:376)\r\n\tat org.openqa.selenium.By$ByLinkText.findElement(By.java:220)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy17.click(Unknown Source)\r\n\tat pages.LandingPage.I_decide_to_create_an_account(LandingPage.java:33)\r\n\tat steps.LandingPageStep.she_chooses_to_sign_up(LandingPageStep.java:14)\r\n\tat ✽.When I decide to create an account(SignUpNewUser.feature:8)\r\n",
+  "status": "failed"
 });
 formatter.match({
-  "location": "SignInStep.decideToSignIn()"
+  "location": "RegisterPageStep.I_provide_my_info_correctly_as_follows(UserInfo\u003e)"
 });
 formatter.result({
-  "duration": 14582724170,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
-  "location": "BookDetailSetp.provideFlightDetails(FlightInfo\u003e)"
+  "location": "RegisterPageStep.I_submit_the_form()"
 });
 formatter.result({
-  "duration": 737862289,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
-  "location": "BookDetailSetp.providePreferences(FlightInfo\u003e)"
+  "arguments": [
+    {
+      "val": "http://newtours.demoaut.com/create_account_success.php",
+      "offset": 16
+    }
+  ],
+  "location": "SuccesPageStep.setup(String)"
 });
 formatter.result({
-  "duration": 242148963,
-  "status": "passed"
-});
-formatter.match({
-  "location": "FlightSelectionStep.pressContinue()"
-});
-formatter.result({
-  "duration": 355949918,
-  "status": "passed"
-});
-formatter.match({
-  "location": "FlightSelectionStep.selectAFlightRandomly()"
-});
-formatter.result({
-  "duration": 59131036,
-  "status": "passed"
-});
-formatter.match({
-  "location": "FlightSelectionStep.pressContinue()"
-});
-formatter.result({
-  "duration": 443947003,
-  "status": "passed"
-});
-formatter.match({
-  "location": "PurchaseDetailsStep.providePassengersInfo(Passenger\u003e)"
-});
-formatter.result({
-  "duration": 1337349156,
-  "status": "passed"
-});
-formatter.match({
-  "location": "PurchaseDetailsStep.provideCreditCardInfo(AdditionalInfo\u003e)"
-});
-formatter.result({
-  "duration": 999188201,
-  "status": "passed"
-});
-formatter.match({
-  "location": "PurchaseDetailsStep.provideBillingAddress(AdditionalInfo\u003e)"
-});
-formatter.result({
-  "duration": 1070349337,
-  "status": "passed"
-});
-formatter.match({
-  "location": "PurchaseDetailsStep.provideDeliveryAddress(AdditionalInfo\u003e)"
-});
-formatter.result({
-  "duration": 971630847,
-  "status": "passed"
-});
-formatter.match({
-  "location": "FlightSelectionStep.pressContinue()"
-});
-formatter.result({
-  "duration": 475852200,
-  "status": "passed"
-});
-formatter.match({
-  "location": "FlightBookedStep.iShouldGetAResult()"
-});
-formatter.result({
-  "duration": 51550346,
-  "status": "passed"
+  "status": "skipped"
 });
 });
