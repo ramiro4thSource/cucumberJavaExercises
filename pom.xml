@@ -19,11 +19,6 @@
         </plugins>
 
     </build>
-
-
-
-
-
     <dependencies>
         <dependency>
             <groupId>info.cukes</groupId>
