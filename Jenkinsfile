@@ -6,7 +6,7 @@ pipeline {
                 bat 'mvn test'
             }
         }   
-        stage('Test') { 
+        stage('Build') { 
             steps{
                 bat 'mvn clean install'
             }
