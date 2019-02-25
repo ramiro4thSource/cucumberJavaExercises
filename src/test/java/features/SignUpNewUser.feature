@@ -10,6 +10,6 @@ And I provide my info correctly as follows
 | firstName | lastName| country|    email    |  password | adress             | phone       | city   | province | zipCode|  userName |
 | Fernando  | Montreal| YEMEN  | fer@fake.com| holaMundo | calle siempre viva | 9995-09-09  | Bororo | shing    | 98000  |  pedrito  |
 And I submit the form
-Then I should get at http://newtours.demoaut.com/create_account_success.php
- #Then I should get at http://newtours.demoaut.com/create_account.php
+#Then I should get at http://newtours.demoaut.com/create_account_success.php
+ Then I should get at http://newtours.demoaut.com/create_account.php
 	
