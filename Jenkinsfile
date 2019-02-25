@@ -3,7 +3,9 @@ pipeline {
     stages {
         stage('Test') {
             steps{
-                bat 'mvn test'
+                withMaven(maven:'maven_3_5_4'){
+                    bat 'mvn test'
+                }
             }
         }
         stage('Cucumber-Reports'){
