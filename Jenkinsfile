@@ -4,7 +4,7 @@ pipeline {
         stage('Test') {
             steps{
                 withMaven(maven:'M3'){
-                    bat 'mvn test'
+                    sh 'mvn test'
                 }
             }
         }
