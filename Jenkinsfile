@@ -1,11 +1,6 @@
 pipeline { 
     agent any  
-    stages { 
-        stage('Test') { 
-            steps{
-                bat 'mvn test'
-            }
-        }
+    stages {
         stage('Cucumber-Reports'){
             steps{
                 cucumber buildStatus: 'UNSTABLE',
