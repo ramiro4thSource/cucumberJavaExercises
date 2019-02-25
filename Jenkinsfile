@@ -5,11 +5,13 @@ pipeline {
             steps{
                 bat 'mvn test'
             }
-        }   
-        stage('Build') { 
+        }
+        stage('Cucumber-Reports'){
             steps{
-                bat 'mvn clean install'
+                cucumber buildStatus: 'UNSTABLE',
+                        fileIncludePattern: '**/*.json',
+                        jsonReportDirectory:'target'
             }
-        }                	
+        }
     }
 }
